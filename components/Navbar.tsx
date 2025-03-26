@@ -6,10 +6,25 @@ import { ModeToggle } from "./ui/theme-button";
 
 const Navbar = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const [isMenuRendered, setIsMenuRendered] = useState(false);
 
   const toggleMobileMenu = () => {
-    setIsMobileMenuOpen(!isMobileMenuOpen);
+    if (isMobileMenuOpen) {
+      setIsMenuRendered(false);
+      setTimeout(() => setIsMobileMenuOpen(false), 500);
+    } else {
+      setIsMobileMenuOpen(true);
+      setTimeout(() => setIsMenuRendered(true), 50);
+    }
   };
+
+  const navItems = [
+    { name: 'Dashboard', href: '#' },
+    { name: 'Upload', href: '#' },
+    { name: 'Explore', href: '#' },
+    { name: 'Settings', href: '#' }
+  ];
+
 
   return (
     // fix css for light theme
@@ -69,26 +84,26 @@ const Navbar = () => {
             <Image src="/vercel.svg" height={20} width={20} alt="logo" />
           </div>
           <div className="shrink-0 items-center hidden dark:block my-[10px]">
-            <Image src="/image.png" height={20} width={20} alt="logo" />
+            <Image src="/image.png" height={20} width={20} alt="logo"/>
           </div>
           <div className="flex items-center space-x-4">
             <ModeToggle />
-            <button
+            <button 
               onClick={toggleMobileMenu}
               className="text-white dark:text-black focus:outline-none"
             >
-              <svg
-                className="w-6 h-6"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
+              <svg 
+                className="w-6 h-6" 
+                fill="none" 
+                stroke="currentColor" 
+                viewBox="0 0 24 24" 
                 xmlns="http://www.w3.org/2000/svg"
               >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M4 6h16M4 12h16M4 18h16"
+                <path 
+                  strokeLinecap="round" 
+                  strokeLinejoin="round" 
+                  strokeWidth={2} 
+                  d="M4 6h16M4 12h16M4 18h16" 
                 />
               </svg>
             </button>
@@ -96,108 +111,68 @@ const Navbar = () => {
         </div>
       </nav>
 
-      {/* Mobile Menu Overlay */}
-      {/* Modern Mobile Menu Overlay */}
-      {isMobileMenuOpen && (
-        <div
-          className="fixed inset-0 z-50 bg-black/95 dark:bg-white/95 flex items-center justify-center"
-          style={{
-            backdropFilter: "blur(10px)",
-            WebkitBackdropFilter: "blur(10px)",
-          }}
-        >
-          <div className="absolute top-6 right-6 flex space-x-4 items-center">
-            <ModeToggle />
-            <button
-              onClick={toggleMobileMenu}
-              className="text-white dark:text-black focus:outline-none"
-            >
-              <svg
-                className="w-8 h-8"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg"
+         {/* Modern Mobile Menu Overlay */}
+         <div 
+        className={`fixed inset-0 z-50 bg-black/95 dark:bg-white/95 transform transition-all duration-500 ease-in-out 
+        ${isMobileMenuOpen 
+          ? 'opacity-100 scale-100 pointer-events-auto' 
+          : 'opacity-0 scale-110 pointer-events-none'}`}
+        style={{
+          backdropFilter: 'blur(20px)',
+          WebkitBackdropFilter: 'blur(20px)',
+          transformOrigin: 'center center'
+        }}
+      >
+        {isMobileMenuOpen && (
+          <>
+            <div className="absolute top-6 right-6 flex space-x-4 items-center">
+              <ModeToggle />
+              <button 
+                onClick={toggleMobileMenu}
+                className="text-white dark:text-black focus:outline-none transform transition-transform duration-300 hover:scale-110"
               >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M6 18L18 6M6 6l12 12"
-                />
-              </svg>
-            </button>
-          </div>
+                <svg 
+                  className="w-8 h-8" 
+                  fill="none" 
+                  stroke="currentColor" 
+                  viewBox="0 0 24 24" 
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path 
+                    strokeLinecap="round" 
+                    strokeLinejoin="round" 
+                    strokeWidth={2} 
+                    d="M6 18L18 6M6 6l12 12" 
+                  />
+                </svg>
+              </button>
+            </div>
 
-          <div className="text-center space-y-8">
-            <a
-              href="#"
-              onClick={toggleMobileMenu}
-              className="block text-4xl font-bold text-white dark:text-black opacity-0 transform translate-y-4 transition-all duration-300 ease-out hover:text-gray-300 dark:hover:text-gray-700"
-              style={{
-                animationName: "fadeInUp",
-                animationDuration: "0.5s",
-                animationFillMode: "forwards",
-                animationDelay: "0.6s",
-              }}
-            >
-              Dashboard
-            </a>
-            <a
-              href="#"
-              onClick={toggleMobileMenu}
-              className="block text-4xl font-bold text-white dark:text-black opacity-0 transform translate-y-4 transition-all duration-300 ease-out hover:text-gray-300 dark:hover:text-gray-700"
-              style={{
-                animationName: "fadeInUp",
-                animationDuration: "0.5s",
-                animationFillMode: "forwards",
-                animationDelay: "0.7s",
-              }}
-            >
-              Upload
-            </a>
-            <a
-              href="#"
-              onClick={toggleMobileMenu}
-              className="block text-4xl font-bold text-white dark:text-black opacity-0 transform translate-y-4 transition-all duration-300 ease-out hover:text-gray-300 dark:hover:text-gray-700"
-              style={{
-                animationName: "fadeInUp",
-                animationDuration: "0.5s",
-                animationFillMode: "forwards",
-                animationDelay: "0.8s",
-              }}
-            >
-              Explore
-            </a>
-            <a
-              href="#"
-              onClick={toggleMobileMenu}
-              className="block text-4xl font-bold text-white dark:text-black opacity-0 transform translate-y-4 transition-all duration-300 ease-out hover:text-gray-300 dark:hover:text-gray-700"
-              style={{
-                animationName: "fadeInUp",
-                animationDuration: "0.5s",
-                animationFillMode: "forwards",
-                animationDelay: "0.9s",
-              }}
-            >
-              Settings
-            </a>
-          </div>
-        </div>
-      )}
-
-      <style jsx global>{`
-        @keyframes fadeInUp {
-          from {
-            opacity: 0;
-            transform: translateY(20px);
-          }
-          to {
-            opacity: 1;
-            transform: translateY(0);
-          }
-        }
-      `}</style>
+            <div className="flex flex-col justify-center items-center h-full space-y-8 px-6">
+              {navItems.map((item, index) => (
+                <a
+                  key={item.name}
+                  href={item.href}
+                  onClick={toggleMobileMenu}
+                  className={`text-4xl font-bold text-white dark:text-black 
+                    transition-all duration-500 ease-out 
+                    transform 
+                    hover:scale-105 hover:tracking-wider hover:drop-shadow-lg
+                    ${isMenuRendered 
+                      ? 'opacity-100 translate-y-0' 
+                      : 'opacity-0 translate-y-8'
+                    }`}
+                  style={{
+                    transitionDelay: `${0.1 * (index + 1)}s`
+                  }}
+                >
+                  {item.name}
+                </a>
+              ))}
+            </div>
+          </>
+        )}
+      </div>
     </>
   );
 };
