@@ -15,7 +15,7 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: "Project QT",
-  description: "Created using NextJS by Nilesh@A22",
+  description: "Created using NextJS",
 };
 
 export default function RootLayout({
