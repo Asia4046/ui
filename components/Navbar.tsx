@@ -78,7 +78,7 @@ const Navbar = () => {
       </nav>
 
       {/* Mobile Navbar */}
-      <nav className="fixed top-4 left-1/2 -translate-x-1/2 rounded-xl w-[90%] max-w-[1200px] px-4 py-2 backdrop-saturate-50 bg-black/90 backdrop-blur-2xl shadow-2xl border border-white/10 dark:bg-white/90 dark:shadow-lg animate-navbar sm:hidden">
+      <nav className="fixed top-4 left-1/2 -translate-x-1/2 rounded-xl w-[90%] max-w-[1200px] px-4 py-2 backdrop-saturate-50 bg-black/90 backdrop-blur-xl shadow-md border dark:shadow-amber-50 border-white/10 dark:bg-white/90 dark:shadow-lg animate-navbar sm:hidden">
         <div className="flex justify-between items-center">
           <div className="flex shrink-0 items-center dark:hidden">
             <Image src="/vercel.svg" height={20} width={20} alt="logo" />
