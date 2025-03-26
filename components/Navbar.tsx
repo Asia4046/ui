@@ -3,6 +3,7 @@
 import Image from "next/image";
 import React, { useState } from "react";
 import { ModeToggle } from "./ui/theme-button";
+import { BackgroundGradient } from "./ui/background-gradient";
 
 const Navbar = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);

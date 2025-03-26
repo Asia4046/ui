@@ -1,11 +1,11 @@
-import { Button } from "@/components/ui/button";
+import Hero from "./pages/Hero"
 import Navbar from "@/components/Navbar";
 
 export default function Home() {
   return (
     <div className="bg-background">
+      <Hero />
       <Navbar />
-      Hello World
     </div>
   );
 }
