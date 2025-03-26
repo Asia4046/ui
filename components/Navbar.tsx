@@ -5,8 +5,8 @@ import { ModeToggle } from "./ui/theme-button";
 const Navbar = () => {
   return (
     // fix css for light theme
-    <nav className="rounded-md antialiased w-[94rem] mx-[16px] my-[16px] backdrop-saturate-50 bg-black/90 backdrop-blur-2xl shadow-gray-400 shadow-md dark:bg-white/100 dark:shadow-amber-50">
-      <div className="mx-auto px-2 sm:px-6 lg:px-8">
+    <nav className=" fixed top-4 left-1/2 -translate-x-1/2 rounded-2xl antialiased w-[95%] max-w-[1800px] mx-auto px-4 backdrop-saturate-50 bg-black/90 backdrop-blur-2xl shadow-gray-400 shadow-md dark:bg-white/100 dark:shadow-amber-50 animate-navbar">
+      <div className="mx-auto px-2 sm:px-6 lg:px-8 max-w-7xl w-auto">
         <div className="relative flex h-16 items-center justify-between">
           <div className="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
             <div className="flex shrink-0 items-center dark:hidden">
@@ -15,7 +15,7 @@ const Navbar = () => {
             <div className="shrink-0 items-center hidden dark:block my-[10px]">
               <Image src="/image.png" height={20} width={20} alt="logo"/>
             </div>
-            <div className="hiddel sm:ml-6 sm:block">
+            <div className="hidden sm:ml-6 sm:block">
               <div className="flex space-x-4">
                 <a
                   href="#"
@@ -44,7 +44,7 @@ const Navbar = () => {
                 </a>
               </div>
             </div>
-            <div className="mx-255 flex px-0.5">
+            <div className="ml-auto flex items-center px-0.5">
               <ModeToggle />
             </div>
           </div>
