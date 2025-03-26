@@ -138,7 +138,7 @@ const Navbar = () => {
                 animationName: "fadeInUp",
                 animationDuration: "0.5s",
                 animationFillMode: "forwards",
-                animationDelay: "0.1s",
+                animationDelay: "0.6s",
               }}
             >
               Dashboard
@@ -151,7 +151,7 @@ const Navbar = () => {
                 animationName: "fadeInUp",
                 animationDuration: "0.5s",
                 animationFillMode: "forwards",
-                animationDelay: "0.2s",
+                animationDelay: "0.7s",
               }}
             >
               Upload
@@ -164,7 +164,7 @@ const Navbar = () => {
                 animationName: "fadeInUp",
                 animationDuration: "0.5s",
                 animationFillMode: "forwards",
-                animationDelay: "0.3s",
+                animationDelay: "0.8s",
               }}
             >
               Explore
@@ -177,7 +177,7 @@ const Navbar = () => {
                 animationName: "fadeInUp",
                 animationDuration: "0.5s",
                 animationFillMode: "forwards",
-                animationDelay: "0.4s",
+                animationDelay: "0.9s",
               }}
             >
               Settings
