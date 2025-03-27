@@ -24,7 +24,7 @@ const Hero = () => {
         >
           Welcome! This Is The Landing Page For Project QT. Thank You For
           Visiting The Page. We are Sorry to inform that{" "}
-          <Highlight className="text-black dark:text-white">
+          <Highlight className="text-black dark:text-amber-50">
             The Website Is Under Construction.
           </Highlight>
         </motion.h1>

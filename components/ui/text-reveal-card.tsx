@@ -97,7 +97,9 @@ export const TextRevealCard = ({
             }}
             className="text-base sm:text-[3rem] py-10 font-bold text-white bg-clip-text text-transparent bg-gradient-to-b from-white to-neutral-300"
           >
+            <a href="https://discord.gg/FsyJJdnBYe">
             {revealText}
+            </a>
           </p>
         </motion.div>
         <motion.div

@@ -3,6 +3,8 @@
 import Image from "next/image";
 import React, { useState } from "react";
 import { ModeToggle } from "./ui/theme-button";
+import Signin_button from "./signin_button";
+import { Button } from "./ui/button";
 
 const Navbar = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -34,45 +36,47 @@ const Navbar = () => {
         <div className="mx-auto px-2 sm:px-6 lg:px-8 max-w-7xl w-auto">
           <div className="relative flex h-16 items-center justify-between">
             <div className="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
-              <div className="flex shrink-0 items-center dark:hidden">
+              <div className="flex shrink-0 py-4 items-center dark:hidden">
                 <Image src="/vercel.svg" height={20} width={20} alt="logo" />
               </div>
-              <div className="shrink-0 items-center hidden dark:block my-[10px]">
+              <div className="shrink-0 py-4 items-center hidden dark:block my-[10px]">
                 <Image src="/image.png" height={20} width={20} alt="logo" />
               </div>
               <div className="hidden sm:ml-6 sm:block">
-                <div className="flex space-x-4">
+                <div className="flex py-4 space-x-4">
                 
                   <a
                     href="#"
-                    className="rounded-md hover:bg-gray-700 px-3 py-2 text-sm font-medium text-white dark:text-gray-950 dark:hover:bg-gray-200"
+                    className="rounded-md hover:bg-gray-700 px-3 py-2 text-sm font-medium text-white dark:text-gray-950 dark:hover:bg-amber-100"
                     aria-current="page"
                   >
                     Dashboard
                   </a>
                   <a
                     href="#"
-                    className="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white dark:text-gray-950 dark:hover:bg-gray-200"
+                    className="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white dark:text-gray-950 dark:hover:bg-amber-100"
                   >
                     Upload
                   </a>
                   <a
                     href="#"
-                    className="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white dark:text-gray-950 dark:hover:bg-gray-200"
+                    className="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white dark:text-gray-950 dark:hover:bg-amber-100"
                   >
                     Explore
                   </a>
                   <a
                     href="#"
-                    className="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white dark:text-gray-950 dark:hover:bg-gray-200"
+                    className="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white dark:text-gray-950 dark:hover:bg-amber-100"
                   >
                     Settings
                   </a>
                 </div>
               </div>
               <div className="ml-auto flex items-center px-0.5">
-                <ModeToggle />
+                <Button className="dark:text-black dark:bg-amber-50 border border-black m-2 dark:hover:bg-amber-100"><a href="/signin">Signin</a></Button>
+              <ModeToggle />
               </div>
+           
             </div>
           </div>
         </div>
