@@ -30,7 +30,7 @@ const Navbar = () => {
     // fix css for light theme
     <>
       {/* Desktop */}
-      <nav className="fixed top-4 left-1/2 -translate-x-1/2 rounded-2xl antialiased w-[95%] max-w-[1800px] z-50 mx-auto px-4 backdrop-saturate-50 bg-black/90 backdrop-blur-2xl shadow-gray-400 shadow-md dark:bg-white/100 dark:shadow-amber-100 animate-navbar max-sm:hidden">
+      <nav className="fixed top-4 left-1/2 -translate-x-1/2 rounded-2xl antialiased w-[95%] max-w-[1800px] z-50 mx-auto px-4 backdrop-saturate-50 bg-black/90 backdrop-blur-2xl shadow-gray-400 shadow-md dark:bg-amber-50 dark:shadow-white animate-navbar max-sm:hidden">
         <div className="mx-auto px-2 sm:px-6 lg:px-8 max-w-7xl w-auto">
           <div className="relative flex h-16 items-center justify-between">
             <div className="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">

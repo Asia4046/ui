@@ -6,7 +6,7 @@ import Footer from "@/components/Footer";
 export default function Home() {
   return (
     <div className="bg-amber-50 dark:bg-background">
-      <Hero/>
+      <Hero/> 
       <Hero_1 />  
       <Navbar />
       <Footer/>
