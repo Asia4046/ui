@@ -8,7 +8,7 @@ import {
 
 const Hero_1 = () => {
   return (
-    <div className="flex items-center justify-center bg-[#0E0E10] h-[40rem] rounded-2xl w-full px-4 sm:px-6 md:px-8">
+    <div className="flex items-center justify-center bg-white/90 dark:bg-[#0E0E10] h-[40rem] rounded-2xl w-full px-4 sm:px-6 md:px-8">
     <TextRevealCard
       text="Wanna Join The Cbse Community?"
       revealText="https://discord.gg/FsyJJdnBYe"
