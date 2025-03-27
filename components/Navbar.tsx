@@ -6,7 +6,6 @@ import { ModeToggle } from "./ui/theme-button";
 import { BackgroundGradient } from "./ui/background-gradient";
 import { GlowingEffect } from "./ui/glowing-effect";
 import { HoverBorderGradient } from "./ui/hover-border-gradient";
-import { Button } from "./ui/moving-border";
 
 const Navbar = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
