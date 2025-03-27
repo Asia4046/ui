@@ -3,9 +3,6 @@
 import Image from "next/image";
 import React, { useState } from "react";
 import { ModeToggle } from "./ui/theme-button";
-import { BackgroundGradient } from "./ui/background-gradient";
-import { GlowingEffect } from "./ui/glowing-effect";
-import { HoverBorderGradient } from "./ui/hover-border-gradient";
 
 const Navbar = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
