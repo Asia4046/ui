@@ -4,6 +4,9 @@ import Image from "next/image";
 import React, { useState } from "react";
 import { ModeToggle } from "./ui/theme-button";
 import { BackgroundGradient } from "./ui/background-gradient";
+import { GlowingEffect } from "./ui/glowing-effect";
+import { HoverBorderGradient } from "./ui/hover-border-gradient";
+import { Button } from "./ui/moving-border";
 
 const Navbar = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -31,7 +34,7 @@ const Navbar = () => {
     // fix css for light theme
     <>
       {/* Desktop */}
-      <nav className=" fixed top-4 left-1/2 -translate-x-1/2 rounded-2xl antialiased w-[95%] max-w-[1800px] mx-auto px-4 backdrop-saturate-50 bg-black/90 backdrop-blur-2xl shadow-gray-400 shadow-md dark:bg-white/100 dark:shadow-amber-100 animate-navbar max-sm:hidden">
+      <nav className="fixed top-4 left-1/2 -translate-x-1/2 rounded-2xl antialiased w-[95%] max-w-[1800px] mx-auto px-4 backdrop-saturate-50 bg-black/90 backdrop-blur-2xl shadow-gray-400 shadow-md dark:bg-white/100 dark:shadow-amber-100 animate-navbar max-sm:hidden">
         <div className="mx-auto px-2 sm:px-6 lg:px-8 max-w-7xl w-auto">
           <div className="relative flex h-16 items-center justify-between">
             <div className="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
@@ -43,6 +46,7 @@ const Navbar = () => {
               </div>
               <div className="hidden sm:ml-6 sm:block">
                 <div className="flex space-x-4">
+                
                   <a
                     href="#"
                     className="rounded-md hover:bg-gray-700 px-3 py-2 text-sm font-medium text-white dark:text-gray-950 dark:hover:bg-gray-200"
@@ -174,7 +178,7 @@ const Navbar = () => {
           </>
         )}
       </div>
-    </>
+      </>
   );
 };
 
