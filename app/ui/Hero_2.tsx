@@ -41,7 +41,7 @@ export function Hero_2() {
   ];
  
   return(
-    <div className="border-black rounded-xl border-2 py-6 dark:border-amber-50">
+    <div className="border-black rounded-xl border-2 m-2 py-6 dark:border-amber-50">
     <FocusCards cards={cards} />
     </div>
   ) 
