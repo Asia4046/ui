@@ -14,8 +14,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Project QT",
-  description: "Created using NextJS",
+  title: "The CBSE Community",
+  description: "The Official Landing Page for the CBSE Community Server (Draft)",
 };
 
 export default function RootLayout({
