@@ -16,8 +16,6 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "The CBSE Community",
   description: "The Official Landing Page for the CBSE Community Server (Draft)",
-  siteName: "The CBSE Community",
-  authors: ["Nilesh@A2", "The CBSE Community"],
 };
 
 export default function RootLayout({
