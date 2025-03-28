@@ -31,7 +31,7 @@ const Navbar = () => {
     // fix css for light theme
     <>
       {/* Desktop */}
-      <nav className="border-2 border-[#F2D7D9] fixed top-4 left-1/2 -translate-x-1/2 rounded-2xl antialiased w-[95%] max-w-[1800px] z-50 mx-auto px-4 backdrop-saturate-50 bg-black/90 backdrop-blur-2xl shadow-gray-400 shadow-md dark:bg-zinc-800 dark:shadow-white animate-navbar max-sm:hidden">
+      <nav className="border-2 border-[#F2D7D9] fixed top-4 left-1/2 -translate-x-1/2 rounded-2xl antialiased w-[95%] max-w-[1800px] z-50 mx-auto px-4 backdrop-saturate-100 bg-black/80 backdrop-blur-2xl shadow-gray-400 shadow-md dark:bg-zinc-800/80 dark:shadow-white animate-navbar max-sm:hidden">
         <div className="mx-auto px-2 sm:px-6 lg:px-8 max-w-7xl w-auto">
           <div className="relative flex h-16 items-center justify-between">
             <div className="flex flex-1 items-center justify-start sm:items-stretch sm:justify-start">
@@ -83,7 +83,7 @@ const Navbar = () => {
       </nav>
 
       {/* Mobile Navbar */}
-      <nav className=" z-[60] fixed top-4 left-1/2 -translate-x-1/2 rounded-xl w-[90%] max-w-[1200px] px-4 py-2 bg-black/90 shadow-sm border-2 border-[#F2D7D9] dark:bg-zinc-800 dark:shadow-lg animate-navbar sm:hidden">
+      <nav className=" z-[60] fixed top-4 left-1/2 -translate-x-1/2 rounded-xl w-[90%] max-w-[1200px] px-4 py-2 bg-black/90 shadow-sm border-2 border-[#F2D7D9] dark:bg-zinc-800 dark:shadow-lg animate-navbar sm:hidden backdrop-blur-2xl">
         <div className="flex justify-between items-center">
           <div className="flex shrink-0 items-center">
             <Image src="/icon.jpg" height={36} width={36} alt="logo" className="rounded-md antialiased" />
