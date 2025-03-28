@@ -3,7 +3,6 @@
 import Image from "next/image";
 import React, { useState } from "react";
 import { ModeToggle } from "./ui/theme-button";
-import Signin_button from "./signin_button";
 import { Button } from "./ui/button";
 
 const Navbar = () => {
@@ -32,10 +31,10 @@ const Navbar = () => {
     // fix css for light theme
     <>
       {/* Desktop */}
-      <nav className="fixed top-4 left-1/2 -translate-x-1/2 rounded-2xl antialiased w-[95%] max-w-[1800px] z-50 mx-auto px-4 backdrop-saturate-50 bg-black/90 backdrop-blur-2xl shadow-gray-400 shadow-md dark:bg-amber-50 dark:shadow-white animate-navbar max-sm:hidden">
+      <nav className="border-2 border-amber-50 dark:border-black fixed top-4 left-1/2 -translate-x-1/2 rounded-2xl antialiased w-[95%] max-w-[1800px] z-50 mx-auto px-4 backdrop-saturate-50 bg-black/90 backdrop-blur-2xl shadow-gray-400 shadow-md dark:bg-amber-50 dark:shadow-white animate-navbar max-sm:hidden">
         <div className="mx-auto px-2 sm:px-6 lg:px-8 max-w-7xl w-auto">
           <div className="relative flex h-16 items-center justify-between">
-            <div className="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
+            <div className="flex flex-1 items-center justify-start sm:items-stretch sm:justify-start">
               <div className="flex shrink-0 py-4 items-center dark:hidden">
                 <Image src="/vercel.svg" height={20} width={20} alt="logo" />
               </div>
@@ -72,9 +71,12 @@ const Navbar = () => {
                   </a>
                 </div>
               </div>
-              <div className="ml-auto flex items-center px-0.5">
-                <Button className="dark:text-black dark:bg-amber-50 border border-black m-2 dark:hover:bg-amber-100"><a href="/signin">Signin</a></Button>
-              <ModeToggle />
+              <div className="ml-auto flex items-center -mx-10">
+              <a href="/signin"><Button className="hover:bg-gray-700  hover:cursor-pointer dark:text-black border-amber-50 dark:bg-amber-50 border dark:border-black  dark:hover:bg-amber-100 mr-2">Signin</Button></a>
+              <a href="/signup"><Button className="hover:bg-gray-700  hover:cursor-pointer dark:text-black border-amber-50 dark:bg-amber-50 border dark:border-black dark:hover:bg-amber-100 mr-5">Signup</Button></a>
+             <div className="flex items-center">
+              <ModeToggle  />
+              </div>
               </div>
            
             </div>

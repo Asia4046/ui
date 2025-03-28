@@ -29,27 +29,27 @@ const page = () => {
           <div className="mb-4 flex flex-col space-y-2 md:flex-row md:space-y-0 md:space-x-2">
             <LabelInputContainer>
               <Label htmlFor="firstname">First name</Label>
-              <Input id="firstname" placeholder="Tyler" type="text" />
+              <Input id="firstname" placeholder="RC" type="text" />
             </LabelInputContainer>
             <LabelInputContainer>
               <Label htmlFor="lastname">Last name</Label>
-              <Input id="lastname" placeholder="Durden" type="text" />
+              <Input id="lastname" placeholder="HQ" type="text" />
             </LabelInputContainer>
           </div>
           <LabelInputContainer className="mb-4">
             <Label htmlFor="email">Email Address</Label>
-            <Input id="email" placeholder="projectmayhem@fc.com" type="email" />
+            <Input id="email" placeholder="email" type="email" />
           </LabelInputContainer>
           <LabelInputContainer className="mb-4">
             <Label htmlFor="password">Password</Label>
             <Input id="password" placeholder="••••••••" type="password" />
           </LabelInputContainer>
           <LabelInputContainer className="mb-8">
-            <Label htmlFor="discordid">Your Discord ID</Label>
+            <Label htmlFor="discordid">Your Discord Username</Label>
             <Input
-              id="discordid"
-              placeholder="id"
-              type="discordid"
+              id="discord_uname"
+              placeholder="Discord Username"
+              type="discord_uname"
             />
           </LabelInputContainer>
 
