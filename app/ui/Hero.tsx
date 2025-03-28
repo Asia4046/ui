@@ -22,7 +22,7 @@ const Hero = () => {
           }}
           className="text-2xl px-4 md:text-4xl lg:text-5xl font-bold text-neutral-700 dark:text-white max-w-4xl leading-relaxed lg:leading-snug text-center mx-auto "
         >
-          Welcome! This Is The Landing Page For Project QT. Thank You For
+          Welcome! This Is The Landing Page For The CBSE Community. Thank You For
           Visiting The Page. We are Sorry to inform that{" "}
           <Highlight className="text-black dark:text-amber-50">
             The Website Is Under Construction.
