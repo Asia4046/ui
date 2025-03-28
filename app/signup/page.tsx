@@ -21,7 +21,7 @@ const page = () => {
     <>
     <Navbar />
     <div className="py-20 m-10">
-      <div className="shadow-input mx-auto w-full max-w-md rounded-2xl border-2 border-[#F2D7D9] bg-white p-4 md:rounded-2xl md:p-8 dark:bg-black">
+      <div className="shadow-input mx-auto w-full max-w-md rounded-2xl border-2 border-zinc-500 bg-white p-4 md:rounded-2xl md:p-8 dark:bg-black">
         <h2 className="text-xl font-bold text-neutral-800 dark:text-neutral-200">
           Welcome to The CBSE Community
         </h2>
