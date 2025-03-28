@@ -29,7 +29,7 @@ export function Hero_2() {
   ];
  
   return(
-    <div className="border-black rounded-xl border-2 m-2 py-2 dark:border-[#F2D7D9]">
+    <div className="border-black rounded-xl border-2 m-2 py-2 dark:border-zinc-600">
       <h1 className="text-center font-bold antialiased text-2xl my-7">What We Offer At Our Server!</h1>
     <FocusCards cards={cards} />
     </div>
