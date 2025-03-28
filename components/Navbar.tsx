@@ -31,7 +31,7 @@ const Navbar = () => {
     // fix css for light theme
     <>
       {/* Desktop */}
-      <nav className="border-2 border-amber-50 dark:border-black fixed top-4 left-1/2 -translate-x-1/2 rounded-2xl antialiased w-[95%] max-w-[1800px] z-50 mx-auto px-4 backdrop-saturate-50 bg-black/90 backdrop-blur-2xl shadow-gray-400 shadow-md dark:bg-amber-50 dark:shadow-white animate-navbar max-sm:hidden">
+      <nav className="border-2 border-[#F2D7D9] dark:border-black fixed top-4 left-1/2 -translate-x-1/2 rounded-2xl antialiased w-[95%] max-w-[1800px] z-50 mx-auto px-4 backdrop-saturate-50 bg-black/90 backdrop-blur-2xl shadow-gray-400 shadow-md dark:bg-[#D3CEDF] dark:shadow-white animate-navbar max-sm:hidden">
         <div className="mx-auto px-2 sm:px-6 lg:px-8 max-w-7xl w-auto">
           <div className="relative flex h-16 items-center justify-between">
             <div className="flex flex-1 items-center justify-start sm:items-stretch sm:justify-start">
@@ -46,34 +46,34 @@ const Navbar = () => {
                 
                   <a
                     href="#"
-                    className="rounded-md hover:bg-gray-700 px-3 py-2 text-sm font-medium text-white dark:text-gray-950 dark:hover:bg-amber-100"
+                    className="rounded-md hover:bg-gray-700 px-3 py-2 text-sm font-medium text-[#F2D7D9] dark:text-gray-950 dark:hover:bg-amber-100"
                     aria-current="page"
                   >
                     Dashboard
                   </a>
                   <a
                     href="#"
-                    className="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white dark:text-gray-950 dark:hover:bg-amber-100"
+                    className="rounded-md px-3 py-2 text-sm font-medium text-[#F2D7D9] hover:bg-gray-700 hover:text-white dark:text-gray-950 dark:hover:bg-amber-100"
                   >
                     Upload
                   </a>
                   <a
                     href="#"
-                    className="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white dark:text-gray-950 dark:hover:bg-amber-100"
+                    className="rounded-md px-3 py-2 text-sm font-medium text-[#F2D7D9] hover:bg-gray-700 hover:text-white dark:text-gray-950 dark:hover:bg-amber-100"
                   >
                     Explore
                   </a>
                   <a
                     href="#"
-                    className="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white dark:text-gray-950 dark:hover:bg-amber-100"
+                    className="rounded-md px-3 py-2 text-sm font-medium text-[#F2D7D9] hover:bg-gray-700 hover:text-white dark:text-gray-950 dark:hover:bg-amber-100"
                   >
                     Settings
                   </a>
                 </div>
               </div>
               <div className="ml-auto flex items-center -mx-10">
-              <a href="/signin"><Button className="hover:bg-gray-700  hover:cursor-pointer dark:text-black border-amber-50 dark:bg-amber-50 border dark:border-black  dark:hover:bg-amber-100 mr-2">Signin</Button></a>
-              <a href="/signup"><Button className="hover:bg-gray-700  hover:cursor-pointer dark:text-black border-amber-50 dark:bg-amber-50 border dark:border-black dark:hover:bg-amber-100 mr-5">Signup</Button></a>
+              <a href="/signin"><Button className="hover:bg-gray-700  hover:cursor-pointer dark:text-black text-[#F2D7D9] border-[#F2D7D9] dark:bg-amber-50 border dark:border-black  dark:hover:bg-amber-100 mr-2">Signin</Button></a>
+              <a href="/signup"><Button className="hover:bg-gray-700  hover:cursor-pointer dark:text-black text-[#F2D7D9] border-[#F2D7D9] dark:bg-amber-50 border dark:border-black dark:hover:bg-amber-100 mr-5">Signup</Button></a>
              <div className="flex items-center">
               <ModeToggle  />
               </div>

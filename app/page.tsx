@@ -6,7 +6,7 @@ import Hero_2 from "./ui/Hero_2";
 
 export default function Home() {
   return (
-    <div className="bg-amber-50 dark:bg-background">
+    <div className="bg-[#D3CEDF] dark:bg-background">
       <Hero/> 
       <Hero_2 />
       <Hero_1 />  
