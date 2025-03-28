@@ -21,9 +21,9 @@ const Navbar = () => {
 
   const navItems = [
     { name: 'Dashboard', href: '#' },
-    { name: 'Upload', href: '#' },
     { name: 'Explore', href: '#' },
-    { name: 'Settings', href: '#' }
+    { name: 'Sign In', href: '/signin' },
+    { name: 'Sign Up', href: '/signup' }
   ];
 
 
@@ -36,7 +36,7 @@ const Navbar = () => {
           <div className="relative flex h-16 items-center justify-between">
             <div className="flex flex-1 items-center justify-start sm:items-stretch sm:justify-start">
               <div className="flex shrink-0 py-2 -mr-4 -mx-8 items-center">
-                <Image src="/icon.jpg" height={36} width={36} alt="logo" className="rounded-md antialiased" />
+                <a href="/"><Image src="/icon.jpg" height={36} width={36} alt="logo" className="rounded-md antialiased" /></a>
               </div>
              
               <div className="hidden sm:ml-6 sm:block">
@@ -86,7 +86,7 @@ const Navbar = () => {
       <nav className=" z-[60] fixed top-4 left-1/2 -translate-x-1/2 rounded-xl w-[90%] max-w-[1200px] px-4 py-2 bg-black/90 shadow-sm border-2 border-[#F2D7D9] dark:bg-zinc-800 dark:shadow-lg animate-navbar sm:hidden backdrop-blur-2xl">
         <div className="flex justify-between items-center">
           <div className="flex shrink-0 items-center">
-            <Image src="/icon.jpg" height={36} width={36} alt="logo" className="rounded-md antialiased" />
+            <a href="/"><Image src="/icon.jpg" height={36} width={36} alt="logo" className="rounded-md antialiased" /></a>
           </div>
           <div className="flex items-center space-x-4">
             <ModeToggle />

@@ -8,6 +8,8 @@ import {
   IconBrandGoogle,
   IconBrandDiscord
 } from "@tabler/icons-react";
+import Navbar from "@/components/Navbar";
+import Footer from "@/components/Footer";
 
 const page = () => {
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
@@ -16,8 +18,10 @@ const page = () => {
   };
 
   return (
-    <div>
-      <div className="shadow-input mx-auto w-full max-w-md rounded-none bg-white p-4 md:rounded-2xl md:p-8 dark:bg-black">
+    <>
+    <Navbar />
+    <div className="py-20 m-10">
+      <div className="shadow-input mx-auto w-full max-w-md rounded-2xl border-2 border-[#F2D7D9] bg-white p-4 md:rounded-2xl md:p-8 dark:bg-black">
         <h2 className="text-xl font-bold text-neutral-800 dark:text-neutral-200">
           Welcome to The CBSE Community
         </h2>
@@ -88,6 +92,8 @@ const page = () => {
         </form>
       </div>
     </div>
+    <Footer />
+    </>
   );
 };
 
