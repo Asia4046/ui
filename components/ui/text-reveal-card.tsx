@@ -131,7 +131,7 @@ export const TextRevealCardTitle = ({
   className?: string;
 }) => {
   return (
-    <h2 className={twMerge("text-white text-lg mb-2", className)}>
+    <h2 className={twMerge("text-[#F2D7D9] text-lg mb-2", className)}>
       {children}
     </h2>
   );
@@ -175,7 +175,7 @@ const Stars = () => {
             left: `${random() * 100}%`,
             width: `2px`,
             height: `2px`,
-            backgroundColor: "white",
+            backgroundColor: "#F2D7D9",
             borderRadius: "50%",
             zIndex: 1,
           }}
