@@ -83,19 +83,16 @@ const Navbar = () => {
       </nav>
 
       {/* Mobile Navbar */}
-      <nav className=" z-[60] fixed top-4 left-1/2 -translate-x-1/2 rounded-xl w-[90%] max-w-[1200px] px-4 py-2 backdrop-saturate-50 bg-black/90 backdrop-blur-xl shadow-md border dark:shadow-amber-50 border-white/10 dark:bg-white/90 dark:shadow-lg animate-navbar sm:hidden">
+      <nav className=" z-[60] fixed top-4 left-1/2 -translate-x-1/2 rounded-xl w-[90%] max-w-[1200px] px-4 py-2 bg-black/90 shadow-sm border-2 border-[#F2D7D9] dark:bg-zinc-800 dark:shadow-lg animate-navbar sm:hidden">
         <div className="flex justify-between items-center">
-          <div className="flex shrink-0 items-center dark:hidden">
+          <div className="flex shrink-0 items-center">
             <Image src="/vercel.svg" height={20} width={20} alt="logo" />
-          </div>
-          <div className="shrink-0 items-center hidden dark:block my-[10px]">
-            <Image src="/image.png" height={20} width={20} alt="logo"/>
           </div>
           <div className="flex items-center space-x-4">
             <ModeToggle />
             <button 
               onClick={toggleMobileMenu}
-              className="text-white dark:text-black focus:outline-none"
+              className="text-[#F2D7D9] focus:outline-none"
             >
               <svg 
                 className="w-6 h-6" 
@@ -118,7 +115,7 @@ const Navbar = () => {
 
          {/* Modern Mobile Menu Overlay */}
          <div 
-        className={`fixed inset-0 z-50 bg-black/95 dark:bg-white/95 transform transition-all duration-500 ease-in-out 
+        className={`fixed inset-0 z-50 bg-black/95 dark:bg-zinc-600 transform transition-all duration-500 ease-in-out 
         ${isMobileMenuOpen 
           ? 'opacity-100 scale-100 pointer-events-auto' 
           : 'opacity-0 scale-110 pointer-events-none'}`}
@@ -134,7 +131,7 @@ const Navbar = () => {
               <ModeToggle />
               <button 
                 onClick={toggleMobileMenu}
-                className="text-white dark:text-black focus:outline-none transform transition-transform duration-300 hover:scale-110"
+                className="text-white dark:text-[#F2D7D9] focus:outline-none transform transition-transform duration-300 hover:scale-110"
               >
                 <svg 
                   className="w-8 h-8" 
@@ -159,7 +156,7 @@ const Navbar = () => {
                   key={item.name}
                   href={item.href}
                   onClick={toggleMobileMenu}
-                  className={`text-4xl font-bold text-white dark:text-black 
+                  className={`text-4xl font-bold text-[#F2D7D9] 
                     transition-all duration-500 ease-out 
                     transform 
                     hover:scale-105 hover:tracking-wider hover:drop-shadow-lg
