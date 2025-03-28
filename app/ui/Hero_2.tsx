@@ -4,7 +4,7 @@ export function Hero_2() {
   const cards = [
     {
       title: "Friendly Community & Expert Guidance",
-      src: "https://i.imgur.com/1h9tUpA.png",
+      src: "https://i.imgur.com/TTOfuNH.png",
     },
     {
       title: "A Large Library Of Reources",
