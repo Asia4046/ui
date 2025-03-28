@@ -8,7 +8,8 @@ const nextConfig: NextConfig = {
       "m.media-amazon.com",
       "upload.wikimedia.org",
       "images.unsplash.com",
-      "assets.aceternity.com"
+      "assets.aceternity.com",
+      "i.imgur.com"
     ],
   },
 };
